@@ -1,0 +1,80 @@
+:root {
+  /*ligt mode*/
+  --LbackgroundColor: #2b2a3b;
+  --LButtonColor: #f2b3d6;
+  --LpColor: #ffffff;
+  --LpDarkColor: #111111;
+
+  /*Dark mode*/
+  --DbackgroundColor: #2b2a3b;
+  --DButtonColor: #f2b3d6;
+  --DpColor: #ffffff;
+  --DpDarkColor: #111111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--DbackgroundColor);
+  color: var(--DpColor) !important; /* Cor do texto */
+}
+
+/* Navbar Style */
+.navbarStyle .nav-link {
+  color: var(--DpColor) !important; /* Cor do texto */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav .animax-icon {
+  width: 50px;
+}
+
+/* main-anime */
+.main-anime {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("../img/one-piece-front.jpg");
+
+  height: 500px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-anime .description {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.main-anime .title {
+  margin-top: 15%;
+  font-size: 40px;
+}
+
+.btn-main {
+  background-color: var(--DbackgroundColor);
+  border: none;
+  border-radius: 25px;
+  color: var(--DpColor);
+
+  padding: 10px 30px;
+  margin-right: 15px;
+  font-size: 15px;
+
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.btn-main:hover {
+  background-color: var(--DButtonColor);
+  color: var(--DbackgroundColor);
+}

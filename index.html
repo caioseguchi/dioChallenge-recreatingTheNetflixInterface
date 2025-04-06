@@ -22,45 +22,36 @@
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css" />
   </head>
 
-  <!--body-->
   <body>
     <header>
-      <!--Navegation bar-->
-      <nav class="navbar p-2 navbar-expand-lg navbarStyle">
-        <div class="container-fluid">
-          <!--Home page icon-->
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary d-flex align-items-center"
+      >
+        <div class="container-fluid d-flex align-items-center">
           <a class="navbar-brand" href="index.html"
-            ><img class="animax-icon" src="img/avatar.png" alt="page icon"
+            ><img class="avatar" src="img/avatar.png" alt="avatar"
           /></a>
-
-          <!--Collapse button for small screem-->
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul
-              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-              style="--bs-scroll-height: 100px"
-            >
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a
-                  class="nav-link active navbar-brand"
-                  aria-current="page"
-                  href="index.html"
+                <a class="nav-link active" aria-current="page" href="index.html"
                   >Animax</a
                 >
               </li>
-
-              <!--Categories-->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Links</a>
+              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -69,274 +60,40 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Categories
+                  Dropdown link
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Drama</a></li>
-                  <li><a class="dropdown-item" href="#">Fantasy</a></li>
-                  <li><a class="dropdown-item" href="#">Comedy</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
                 </ul>
               </li>
-
-              <!--Social midia Links-->
-              <li class="nav-item">
-                <a class="nav-link" href="https://discord.com/"
-                  ><i class="bi bi-discord"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://telegram.org/"
-                  ><i class="bi bi-telegram"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://x.com/"
-                  ><i class="bi bi-twitter-x"></i
-                ></a>
-              </li>
             </ul>
-
-            <!--Search bar-->
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-light" type="submit">
-                Search
-              </button>
-            </form>
+            <button aria-label="selecionar-modo" id="mode-selector">
+              Dark Mode
+            </button>
           </div>
         </div>
       </nav>
     </header>
 
-    <!--Main-->
-    <main>
-      <!--Main Anime-->
-      <div class="main-anime">
-        <div class="container">
-          <h3 class="title">One Piece</h3>
-          <p class="description">
-            Gold Roger was known as the "Pirate King," the strongest and most
-            infamous being to have sailed the Grand Line. The capture and...
-          </p>
-          <div class="btns">
-            <button type="button" class="btn-main">
-              <i class="bi bi-play-circle-fill"></i> Whatch Now
-            </button>
-            <button type="button" class="btn-main">
-              Detail <i class="bi bi-chevron-double-right"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <div class="trading">
-      <h3 class="p-3">Tranding</h3>
-      <div class="owl-carousel owl-theme">
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/one-piiece.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/hunter-x-hunter.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/my-hero-academia.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/bleach.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/dragon-ball-super.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/solo-leveling.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="trading">
-      <h3 class="p-3">Recomendation</h3>
-      <div class="owl-carousel owl-theme">
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/black-clover.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/fullmetal-alchemist.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/jujustsu-kaisen.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/naruto.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/dragon-ball-super.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/solo-leveling.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="trading">
-      <h3 class="p-3">Old School</h3>
-      <div class="owl-carousel owl-theme">
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/pokemon.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/digimon.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/sakura-card.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/tsubasa.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/bleach.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-        <div class="item">
-          <img
-            class="box-anime"
-            src="img/one-piiece.jpg"
-            alt="one piece"
-            srcset=""
-          />
-        </div>
-      </div>
-    </div>
-
-    <footer>
-      <!--ShareAnimax-->
-
-      <img
-        class="gif"
-        src="https://media.giphy.com/media/q8ld8Sk7WWyY0/giphy.gif?cid=ecf05e47xou3b4zefd19dcod2k4gz9rm43tjc2wwpv5zd0p4&ep=v1_gifs_search&rid=giphy.gif&ct=g"
-        alt="one piece gif"
-      />
-      <div class="footer-text">
-        <h5>Sheare Animax</h5>
-        <p>to your Friends</p>
-      </div>
-      <div class="footer-icons">
-        <span class="badge rounded-pill text-bg-primary"
-          ><i class="bi bi-telegram"></i> Share</span
-        >
-        <span class="badge rounded-pill text-bg-secondary"
-          ><i class="bi bi-twitter-x"></i> Share</span
-        >
-        <span class="badge rounded-pill text-bg-success"
-          ><i class="bi bi-facebook"></i> Share</span
-        >
-        <span class="badge rounded-pill text-bg-danger"
-          ><i class="bi bi-share"></i> Share</span
-        >
-      </div>
-    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <!--jQuery Carousel-->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <!--Dark Mode-->
+    <script src="js/darkMode.js"></script>
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"
-  ></script>
-  <script src="js/owl/jquery.min.js"></script>
-  <script src="js/owl/owl.carousel.min.js"></script>
-  <script src="js/owl/setup.js"></script>
 </html>

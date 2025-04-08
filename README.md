@@ -31,6 +31,6 @@ This project is a single-page application where I recreated the structure and fe
 
 ## 👀 Preview
 
-![Project screenshot](./img/animax-readme.mp4)
+[Watch the demo on YouTube](https://youtu.be/iKDmc2TqEzM)
 
 > ⚠️ This project is for learning and portfolio purposes only. All media assets are fictional or used under fair use.

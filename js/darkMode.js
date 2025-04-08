@@ -5,9 +5,12 @@ function changeMode() {
 
 function changeClasses() {
   button.classList.toggle(darkModeClass);
-  //h1.classList.toggle(darkModeClass);
   body.classList.toggle(darkModeClass);
-  //footer.classList.toggle(darkModeClass);
+  footer.classList.toggle(darkModeClass);
+
+  for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].classList.toggle(darkModeClassNavbar);
+  }
 }
 
 function changeText() {
@@ -16,18 +19,17 @@ function changeText() {
 
   if (body.classList.contains(darkModeClass)) {
     button.innerHTML = lightMode;
-    h1.innerHTML = darkMode + " ON";
     return;
   }
 
   button.innerHTML = darkMode;
-  h1.innerHTML = lightMode + " ON";
 }
 
 const darkModeClass = "dark-mode";
 const button = document.getElementById("mode-selector");
-//const h1 = document.getElementById('page-title');
 const body = document.getElementsByTagName("body")[0];
-//const footer = document.getElementsByTagName('footer')[0];
+const footer = document.getElementsByTagName("footer")[0];
+const navLinks = document.getElementsByClassName("nav-link");
+const darkModeClassNavbar = "text-light";
 
 button.addEventListener("click", changeMode);
